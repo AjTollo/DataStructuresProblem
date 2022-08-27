@@ -12,6 +12,7 @@ public class IntegerToEnglishWord {
 
             }
         };
+        System.out.println(tree);
     }
 
 }
