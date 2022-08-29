@@ -1,3 +1,5 @@
+package Problems;
+
 public class mergeSortedArray {
     public static void main(String[] args) {
 

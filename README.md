@@ -1,3 +1,3 @@
 # DataStructuresProblems
 
-All solution that I copied and studied when learning data structures in leetcode and many more.
+All solution that I copied and studied when learning data structures on leetcode and many more.
