@@ -1,11 +1,22 @@
 package Problems;
 
+import java.util.Scanner;
+
 public class ReverseInteger {
+
+    static Scanner scan = new Scanner(System.in);
+
     public static void main(String[] args) {
 
+        int x = scan.nextInt();
+        int reverseInt = reverse(x);
+
+        System.out.println("Reversed Value: " + reverseInt);
+
+        // main(args);
     }
 
-    public int reverse(int x) {
+    public static int reverse(int x) {
         int res = 0;
 
         while (x != 0) {

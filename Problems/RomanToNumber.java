@@ -9,6 +9,13 @@ public class RomanToNumber {
 
     public static void main(String[] args) {
 
+        String x = s.nextLine();
+
+        System.out.println("Number is: " + Converter(x));
+
+    }
+
+    public static int Converter(String x) {
         HashMap<Character, Integer> roman = new HashMap<Character, Integer>();
         roman.put('I', 1);
         roman.put('V', 5);
@@ -18,19 +25,15 @@ public class RomanToNumber {
         roman.put('D', 500);
         roman.put('M', 1000);
 
-        String input = s.nextLine();
-        char[] arr = input.toCharArray();
+        char[] arr = x.toCharArray();
         int rmt = 0;
 
         int intVal, nextIntVal;
 
         for (int i = 0; i < arr.length; i++) {
             intVal = roman.get(arr[i]);
-            System.out.println(intVal);
             if (i != arr.length - 1) {
                 nextIntVal = roman.get(arr[i + 1]);
-                System.out.println("arrLength: " + arr.length);
-
                 if (nextIntVal > intVal) {
                     intVal = nextIntVal - intVal;
                     i = i + 1;
@@ -38,6 +41,6 @@ public class RomanToNumber {
             }
             rmt = rmt + intVal;
         }
-        System.out.println(rmt);
+        return rmt;
     }
 }
